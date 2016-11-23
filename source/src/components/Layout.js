@@ -4,7 +4,7 @@ import TopHeader from "./TopHeader";
 import Content from "./Content";
 import SignIn from "./SignIn";
 
-class componentName extends Component {
+class Layout extends Component {
     render() {
         return (
             <div>
@@ -14,4 +14,4 @@ class componentName extends Component {
     }
 }
 
-export default componentName;
+export default Layout;
