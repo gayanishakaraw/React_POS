@@ -186,7 +186,7 @@ li {
 
 .numpad {
   padding: 9px;
-  float: right;
+  float: left;
   text-align: center; }
   .numpad button {
     height: 54px;
@@ -358,4 +358,43 @@ li {
   width: 100%;
   height: 100%;
   background-color: lavenderblush;
+}
+
+.Login {
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.SignInNumPad {
+  padding: 9px;
+  float: left;
+  align-items: center;
+  text-align: center; }
+  .SignInNumPad button {
+    height: 54px;
+    width: 54px;
+    margin: 0 -3px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #555555;
+    border-top: 1px solid #efefef; }
+    .SignInNumPad button:hover {
+      color: white;
+      background: #7f82ac;
+      background: -moz-linear-gradient(#9d9fc5, #7f82ac);
+      background: -webkit-gradient(linear, left top, left bottom, from(#9d9fc5), to(#7f82ac)); }
+  .SignInNumPad .selected-mode {
+    color: white;
+    background: #7f82ac;
+    background: -moz-linear-gradient(#9d9fc5, #7f82ac);
+    background: -webkit-gradient(linear, left top, left bottom, from(#9d9fc5), to(#7f82ac)); }
+
+#SignInNumPad-Sign {
+  width: 106px; }
+
+.SignInPage{
+  align-items: center;
+  align-content: center;
 }
