@@ -211,7 +211,12 @@ li {
   width: 106px; }
 
 .input-button {
-  font-size: 24px; }
+  font-size: 24px; 
+}
+
+.NumPad-button {
+  font-size: 40px; 
+}
 
 .mode-button, #numpad-delete, #numpad-minus {
   font-size: 14px; }
@@ -368,8 +373,9 @@ li {
 
 
 .SignInNumPad {
-  padding: 9px;
-  float: left;
+  padding: 120px;
+  float: none;
+  margin: 0 auto;
   align-items: center;
   text-align: center; }
   .SignInNumPad button {
@@ -392,9 +398,11 @@ li {
     background: -webkit-gradient(linear, left top, left bottom, from(#9d9fc5), to(#7f82ac)); }
 
 #SignInNumPad-Sign {
-  width: 106px; }
+  width: 75px; }
 
 .SignInPage{
   align-items: center;
   align-content: center;
 }
+
+
