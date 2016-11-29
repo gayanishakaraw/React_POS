@@ -7,7 +7,7 @@ class StartPage extends Component {
     render() {
         return (
             <div>
-                <TopHeader />
+                <TopHeader/>
                 <Content/>
             </div>
         );
