@@ -216,6 +216,7 @@ li {
 
 .NumPad-button {
   font-size: 40px; 
+  
 }
 
 .mode-button, #numpad-delete, #numpad-minus {
@@ -398,11 +399,76 @@ li {
     background: -webkit-gradient(linear, left top, left bottom, from(#9d9fc5), to(#7f82ac)); }
 
 #SignInNumPad-Sign {
-  width: 75px; }
+  font: 25px;
+  width: 75px; 
+  text-align: center;}
+    .SignInNumPad button:hover {
+      color: white;
+      background: #7f82ac;
+      background: -moz-linear-gradient(#9d9fc5, #7f82ac);
+      background: -webkit-gradient(linear, left top, left bottom, from(#9d9fc5), to(#7f82ac)); }
+  
 
 .SignInPage{
   align-items: center;
   align-content: center;
 }
 
+.SignInPasswordField{
+  max-width: 5;
+  max-height: 10;
+  height: 30px;
+}
 
+.autocomplete {
+    position: relative;
+}
+
+.autocomplete input {
+    padding: 5px;
+    width: 388px;
+    border: 1px solid #aaa;
+    outline: 0;
+}
+
+.autocomplete input:focus {
+    border-color: #09c;
+}
+
+.loading .autocomplete__result {
+    color: #bbb;
+}
+
+.autocomplete__result {
+    position: absolute;
+    top: 68px;
+    width: 388px;
+    background: #fff;
+    box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+}
+
+.autocomplete__result ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.autocomplete__result li {
+    padding: 5px;
+    list-style: none;
+}
+
+.autocomplete__result li:hover {
+    background: #fec;
+}
+
+.autocomplete__result li.active {
+    background: #ddd;
+}
+
+.autocomplete__empty {
+    padding: 5px;
+}

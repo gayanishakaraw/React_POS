@@ -19,12 +19,7 @@ constructor(props) {
   }
 
   OnClickDisplayNumber(item){
-     //document.getElementById("EmployeeId").value += item;
-  }
-
-  HideElements(){
-    document.getElementById("signInPassword").hidden = true;
-    
+      document.getElementById("signInPassword").value += item;
   }
 
   render() {
@@ -32,18 +27,18 @@ constructor(props) {
       <div id="SignInPage" >
         <div id="NumPadDiv" class='SignInNumPad'>
         <h1 id="Heading"> Sign In </h1>
-        <textarea id="signInPassword" ></textarea><br/>
-        <button class="NumPad-button" data-char='1'  onClick={this.OnClickDisplayNumber}>1</button>
-        <button class="NumPad-button" data-char='2' onClick={this.OnClickDisplayNumber}>2</button>
-        <button class="NumPad-button" data-char='3'onClick={this.OnClickDisplayNumber}>3</button><br/>
-        <button class="NumPad-button" data-char='4'>4</button>
-        <button class="NumPad-button" data-char='5'>5</button>
-        <button class="NumPad-button" data-char='6'>6</button><br/>
-        <button class="NumPad-button" data-char='7'>7</button>
-        <button class="NumPad-button" data-char='8'>8</button>
-        <button class="NumPad-button" data-char='9'>9</button><br/>
+        <input type="password" id="signInPassword" class="SignInPasswordField" ></input><br/>
+        <button class="NumPad-button" data-char='1' onClick={this.OnClickDisplayNumber.bind(this,'1')}>1</button>
+        <button class="NumPad-button" data-char='2' onClick={this.OnClickDisplayNumber.bind(this,'2')}>2</button>
+        <button class="NumPad-button" data-char='3' onClick={this.OnClickDisplayNumber.bind(this,'3')}>3</button><br/>
+        <button class="NumPad-button" data-char='4' onClick={this.OnClickDisplayNumber.bind(this,'4')}>4</button>
+        <button class="NumPad-button" data-char='5' onClick={this.OnClickDisplayNumber.bind(this,'5')}>5</button>
+        <button class="NumPad-button" data-char='6' onClick={this.OnClickDisplayNumber.bind(this,'6')}>6</button><br/>
+        <button class="NumPad-button" data-char='7' onClick={this.OnClickDisplayNumber.bind(this,'7')}>7</button>
+        <button class="NumPad-button" data-char='8' onClick={this.OnClickDisplayNumber.bind(this,'8')}>8</button>
+        <button class="NumPad-button" data-char='9' onClick={this.OnClickDisplayNumber.bind(this,'9')}>9</button><br/>
         <button id='SignInNumPad-Sign' onClick={this.OnClickSignIn.bind(this)}>Sign In</button>
-        <button class="NumPad-button" data-char='0'>0</button>
+        <button class="NumPad-button" data-char='0' onClick={this.OnClickDisplayNumber.bind(this,'0')}>0</button>
         <button id='SignInNumPad-Sign' onClick="">Clear</button>
         </div>
          {
