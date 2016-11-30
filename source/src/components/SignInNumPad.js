@@ -41,16 +41,19 @@ constructor(props) {
         <button class="NumPad-button" data-char='0' onClick={this.OnClickDisplayNumber.bind(this,'0')}>0</button>
         <button id='SignInNumPad-Sign' onClick="">Clear</button>
         </div>
+
          {
            this.state.showComponent ?
            <StartPage /> :
             null
          }
+
          {
            this.state.showComponent ?
            document.getElementById("NumPadDiv").hidden = true:
            null
          }
+
       </div>
     );
   }
