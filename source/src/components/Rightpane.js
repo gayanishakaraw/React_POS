@@ -1,6 +1,39 @@
+import "babel/polyfill";
 import React, { Component } from 'react';
+import Search from './SearchBox'
 
-class RightPane extends Component {
+const matches = {
+  'Burger a': [
+    'Burger chk 1 ',
+    'Burger beef 11 ',
+    'Berger fish '
+  ],
+  'Burger p': [
+    'Burger mac fish cheese',
+    'Burger mac chk cheese',
+    'Burger mac cheese'
+  ]
+};
+
+class RightPane extends Component{
+
+ onChange(input, resolve) {
+    // Simulate AJAX request
+    setTimeout(() => {
+      const suggestions = matches[Object.keys(matches).find((partial) => {
+        return input.match(new RegExp(partial), 'i');
+      })] || ['Burger', 'Burger mac', 'Burger chk'];
+
+      resolve(suggestions.filter((suggestion) =>
+        suggestion.match(new RegExp('^' + input.replace(/\W\s/g, ''), 'i'))
+      ));
+    }, 25);
+  }
+  onSearch(input) {
+    if (!input) return;
+    console.info(`Searching "${input}"`);
+  }
+
     render() {
         return (
             <div id='rightpane'>
@@ -10,7 +43,7 @@ class RightPane extends Component {
                             <a href="#"><img src="../static/img/home.png" class="homeimg" /></a>
                         </li>
                     </ol>
-                    <input class="searchbox" placeholder="Search Products" />
+                   <Search placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
                 </header>
 
                 <div id="categories">
