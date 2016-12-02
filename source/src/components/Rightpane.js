@@ -1,6 +1,5 @@
-import "babel/polyfill";
 import React, { Component } from 'react';
-import Search from './SearchBox'
+import SearchBar from './SearchBox'
 
 const matches = {
   'Burger a': [
@@ -22,7 +21,7 @@ class RightPane extends Component{
     setTimeout(() => {
       const suggestions = matches[Object.keys(matches).find((partial) => {
         return input.match(new RegExp(partial), 'i');
-      })] || ['Burger', 'Burger mac', 'Burger chk'];
+      })] || ['Burger', 'mac', 'Burger chk', 'Pizza'];
 
       resolve(suggestions.filter((suggestion) =>
         suggestion.match(new RegExp('^' + input.replace(/\W\s/g, ''), 'i'))
@@ -43,7 +42,9 @@ class RightPane extends Component{
                             <a href="#"><img src="../static/img/home.png" class="homeimg" /></a>
                         </li>
                     </ol>
-                   <Search placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
+                    <div class="DivDesign">
+                   <SearchBar placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
+                   </div>
                 </header>
 
                 <div id="categories">
