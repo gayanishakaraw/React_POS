@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import SignInNumPad from './SignInNumPad';
-import LeftPane from './LeftPane';
+import LeftPane from './Leftpane';
 import RightPane from './Rightpane';
 
 class SignIn extends Component{

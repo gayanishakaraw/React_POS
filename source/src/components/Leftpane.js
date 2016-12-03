@@ -1,23 +1,12 @@
 import React, {Component} from 'react';
-import Footer from "./Footer"
+import Footer from "./Footer";
+import CheckDetailArea from "./CheckDetailArea"
 
 class LeftPane extends Component {
   render() {
     return (
       <div id='leftpane'>
-        <div id='receipt'>
-          <table>
-            <thead>
-              <tr>
-                <td>Product</td>
-                <td>Price</td>
-                <td>Disc (%) </td>
-                <td>Qty</td>
-                <td>Total</td>
-              </tr>
-            </thead>
-          </table>
-        </div>
+        <CheckDetailArea />
         <Footer/>
       </div>
     );

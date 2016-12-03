@@ -1,6 +1,6 @@
 {
-  "name": "sample-pos",
-  "version": "0.0.0",
+  "name": "open-pos",
+  "version": "1.0.0",
   "main": "webpack.config.js",
   "dependencies": {
     "babel-loader": "^6.2.0",
@@ -25,9 +25,25 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Gayan N. Wimalarathna and Team",
   "license": "ISC",
-  "description": ""
+  "description": "OpenSource OPS application POC using ReactJS and Flux pattern (ReFlux)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gayanishakaraw/React_POS.git"
+  },
+  "keywords": [
+    "Open-POS",
+    "ReactJS",
+    "Flux",
+    "Node",
+    "Point-Of-Sale"
+  ],
+  "bugs": {
+    "url": "https://github.com/gayanishakaraw/React_POS/issues"
+  },
+  "homepage": "https://github.com/gayanishakaraw/React_POS#readme"
 }
