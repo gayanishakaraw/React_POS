@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SearchBar from './SearchBox'
+import SearchBar from './SearchBox';
+import MenuItem from './MenuItem';
 
 const matches = {
   'Burger a': [
@@ -51,8 +52,9 @@ class RightPane extends Component{
                     <h4>Categories: </h4>
                     <ol></ol>
                 </div>
-                <input type="button" id="getMenuItemList" value="Show Menu Items" onclick="getMenuItemList()" />
-                <div id="menuItems"></div>
+                <div id="menuItems">
+                <MenuItem/>
+                </div>
             </div>
         );
     }

@@ -6,7 +6,7 @@ class TopHeader extends Component {
         return (
             <div id="topheader">
                 <div id="branding">
-                    <h1 class="posName">React POS</h1>
+                    <h1 class="posName">OpenPOS</h1>
                 </div>
                 <div id='steps' class="steps">
                 </div>

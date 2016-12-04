@@ -214,9 +214,20 @@ li {
   font-size: 24px; 
 }
 
+.signinClear-button {
+  height: 54px;
+  width: 54px;
+  font-size: 15px; 
+}
+
 .NumPad-button {
   font-size: 40px; 
-  
+  height: 54px;
+  width: 54px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .mode-button, #numpad-delete, #numpad-minus {
@@ -347,7 +358,10 @@ li {
 
 .steps { width: 266px; height: 55px; }
 
-.posName {font-family: "arial"; font-stretch: "expanded"}
+.posName {
+      font-family: "arial"; 
+      font-stretch: "normal";
+      }
 
 .Mitable {
     table-layout: fixed;
@@ -416,7 +430,7 @@ li {
 
 .SignInPasswordField{
   line-height: 40px;
-  width: 150px;
+  width: 200px;
 }
 
 body {
@@ -534,3 +548,13 @@ input {
   margin: 0 auto;
   align-items: flex-end;
 }
+
+.menuItem {
+    height: 54px;
+    width: auto;
+    margin: 4px;
+    font-weight: bold;
+    vertical-align: middle;
+    background-color:#afafb6;
+    border-top: 1px solid #efefef; 
+    outline-color: #373737}
