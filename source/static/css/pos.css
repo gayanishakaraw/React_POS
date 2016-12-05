@@ -176,6 +176,7 @@ li {
   border-bottom: solid 1px #d2d2d2;
   border-top: solid 1px #e9eaec;
   font-weight: bold;
+  font-size: 15px;
   text-align: right;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
@@ -186,11 +187,11 @@ li {
 
 .numpad {
   padding: 9px;
-  float: left;
+  
   text-align: center; }
   .numpad button {
     height: 54px;
-    width: 54px;
+    width: 100px;
     margin: 0 -3px;
     font-weight: bold;
     vertical-align: middle;
@@ -360,8 +361,10 @@ li {
 
 .posName {
       font-family: "arial"; 
-      font-stretch: "normal";
-      }
+      font-stretch: normal;
+      font-style: oblique;
+      font-size: 25px;
+}
 
 .Mitable {
     table-layout: fixed;

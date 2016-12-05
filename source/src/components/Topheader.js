@@ -8,13 +8,8 @@ class TopHeader extends Component {
                 <div id="branding">
                     <h1 class="posName">OpenPOS</h1>
                 </div>
-                
-                <div id='steps' class="steps">
-                </div>
-                <div id='rightheader'>
-                    <div id='orderstack'></div>
-                    <button id="neworder-button">+</button>
-                </div>
+             
+              
                 <div>
                     <LoginState  />
                 </div>

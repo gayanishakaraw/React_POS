@@ -10,10 +10,7 @@ class LoginState extends Component {
     render() {
         return (
             <div id='loginState' align='right'>
-                <UserName userName={this.props.userName} />
-                <input value={this.props.userName} onChange={this.handleChange.bind(this) } />
-                {/*<p value={this.props.userName}></p>*/}
-                &nbsp;<button>Sign In</button>
+     
             </div>
         );
     }
