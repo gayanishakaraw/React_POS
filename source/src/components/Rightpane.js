@@ -43,10 +43,12 @@ class RightPane extends Component{
                             <a href="#"><img src="../static/img/home.png" class="homeimg" /></a>
                         </li>
                     </ol>
-                    <div class="DivDesign">
-                   <SearchBar placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
-                   </div>
+                   
                 </header>
+
+                <div class="DivDesign">
+                    <SearchBar placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
+                </div>
 
                 <div id="categories">
                     <h4>Categories: </h4>
