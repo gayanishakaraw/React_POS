@@ -108,8 +108,12 @@ class SearchBar extends Component {
   render() {
     /*eslint-disable quotes*/
     return (
-      <div >
-        <div>
+      <div className="search-bar-wrapper">
+        <div className={classNames(
+          'search-bar-field',
+          {'is-focused': this.state.isFocused},
+          {'has-suggestions': this.state.suggestions.length > 0}
+        )}>
           <input
             className="search-bar-input"
             name={this.props.inputName}
@@ -131,7 +135,10 @@ class SearchBar extends Component {
                 onClick={() => this.setState(this.initialState)}>
               </span> 
             }
-         
+           <input
+            className="icon search-bar-submit"
+            type="submit"
+            onClick={this.onSearch.bind(this)} />
         </div>
         { this.state.suggestions.length > 0 &&
           <Suggestions
