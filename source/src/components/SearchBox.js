@@ -114,9 +114,9 @@ class SearchBar extends Component {
             className="search-bar-input"
             name={this.props.inputName}
             type="text"
-            maxLength="20"
+            maxLength="10"
             autoCapitalize="none"
-            autoComplete="on"
+            autoComplete="off"
             autoCorrect="off"
             ref="input"
             value={this.state.value}
@@ -131,10 +131,7 @@ class SearchBar extends Component {
                 onClick={() => this.setState(this.initialState)}>
               </span> 
             }
-          <input
-            className="icon search-bar-submit"
-            type="submit"
-            onClick={this.onSearch.bind(this)} />
+         
         </div>
         { this.state.suggestions.length > 0 &&
           <Suggestions
