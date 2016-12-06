@@ -38,6 +38,7 @@ class RightPane extends Component{
         return (
             <div id='rightpane'>
                 <header>
+
                     <ol class="breadcrum">
                         <li>
                             <a href="#"><img src="../static/img/home.png" class="homeimg" /></a>
@@ -50,7 +51,9 @@ class RightPane extends Component{
                     <SearchBar placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
                  </div>
                  <br/>
-                  </body>
+                 <br/>
+                </body>
+                
                 <div id="categories">
                 
                     <h4>Categories: </h4>

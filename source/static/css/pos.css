@@ -66,8 +66,8 @@ li {
 #branding, #steps, #rightheader {
   float: left;
   overflow: hidden;
-  height: 35px;
-  padding: 10px; }
+  height: 60px;
+  padding: 0px; }
 
 #branding {
   border-right: 1px solid #373737;
@@ -215,7 +215,7 @@ li {
   font-size: 24px; 
 }
 
-.signinClear-button {
+.SignIn-button {
   height: 54px;
   width: 54px;
   font-size: 15px; 
@@ -363,7 +363,7 @@ li {
       font-family: "arial"; 
       font-stretch: normal;
       font-style: oblique;
-      font-size: 25px;
+      font-size: 30px;
 }
 
 .Mitable {
@@ -391,14 +391,14 @@ li {
 
 
 .SignInNumPad {
-  padding: 120px;
+  padding: 0px;
   float: none;
   margin: 0 auto;
   align-items: center;
   text-align: center; }
   .SignInNumPad button {
     height: 54px;
-    width: 54px;
+    width: 100px;
     margin: 0 -3px;
     font-weight: bold;
     vertical-align: middle;
@@ -417,7 +417,14 @@ li {
 
 #SignInNumPad-Sign {
   font: 25px;
-  width: 75px; 
+  width: 90px; 
+  font-size: 15px; 
+  height: 54px;
+  width: 140px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   text-align: center;}
     .SignInNumPad button:hover {
       color: white;
@@ -425,15 +432,27 @@ li {
       background: -moz-linear-gradient(#9d9fc5, #7f82ac);
       background: -webkit-gradient(linear, left top, left bottom, from(#9d9fc5), to(#7f82ac)); }
   
+#SignInNumPad-Clear {
+  font: 25px;
+  width: 140px; 
+  font-size: 15px;
+  height: 54px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;}
 
 .SignInPage{
   align-items: center;
   align-content: center;
+  padding: 0px;
 }
 
 .SignInPasswordField{
   line-height: 40px;
-  width: 200px;
+  width: 305px;
+  padding: 0px;
 }
 
 body {
@@ -563,3 +582,21 @@ input {
     background-color:#afafb6;
     border-top: 1px solid #efefef; 
     outline-color: #373737}
+
+
+  .Heading {
+    font: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;;
+    padding: 0px;
+    vertical-align: text-top;
+    text-align: center;
+    font-stretch: normal;
+    font-style: oblique;
+  }
+
+  .SignOut-Button{
+    float: right;
+    text-align: right;
+    
+    }
