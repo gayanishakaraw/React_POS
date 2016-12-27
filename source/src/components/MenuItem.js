@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import SearchBox from './SearchBox';
+import * as MenuItemActions from '../actions/MenuItemActions';
+import MenuItemStore from '../stores/MenuItemStore';
 
 class MenuItem extends Component {
     render() {
@@ -51,6 +53,7 @@ var MenuItemDetail = React.createClass({
     },
 
     AddMenuItem: function (menuitem) {
+        MenuItemActions.addMenuItem(this.props.menuitem.miName, this.props.menuitem.price);
         alert('LOGIC to add menu item : '+ this.props.menuitem.miName);
     }
 });
