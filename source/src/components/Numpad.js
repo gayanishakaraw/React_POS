@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+{/** TODO : implement the logic to keep the number in memory and use it as the Qty */}
 class NumPad extends Component {
   render() {
     return (

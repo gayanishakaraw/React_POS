@@ -47,9 +47,9 @@ class RightPane extends Component{
                     <br/>
                   </header>
                   <body>
-                  <div class="DivDesign">
+                  {/*<div class="DivDesign">
                     <SearchBar placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
-                 </div>
+                 </div>*/}
                  <br/>
                  <br/>
                 </body>
