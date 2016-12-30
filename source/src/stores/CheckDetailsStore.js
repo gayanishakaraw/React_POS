@@ -8,13 +8,14 @@ class CheckDetailsStore extends EventEmitter {
     this.menuItems = [];
   }
 
-  addMenuItem(text, price) {
+  addMenuItem(text, price, qty) {
     const id = Date.now();
 
     this.menuItems.push({
       id,
       text,
       price,
+      qty,
     });
 
     this.emit("change");
@@ -27,7 +28,7 @@ class CheckDetailsStore extends EventEmitter {
   handleActions(action) {
     switch(action.type) {
       case "ADD_MENUITEM": {
-        this.addMenuItem(action.text, action.price);
+        this.addMenuItem(action.text, action.price, action.qty);
         break;
       }
       case "VOID_MENUITEM": {
