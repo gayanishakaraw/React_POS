@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 
 class CheckDetailItem extends Component {
     render() {
+      const { menuItemId, menuItemName, qty, price } = this.props;
+        
         return (
-            <div id='checkDetailItem'>
-                <p>Sample : TODO : NOT IMPLEMENTED</p><hr/>
-            </div>
+            <tr id={menuItemId}>
+                <td>{menuItemName}</td>
+                <td>{price}</td>
+                <td></td>
+                <td>{qty}</td>
+                <td>{qty * price}</td>
+            </tr>
         );
     }
 }
