@@ -149,12 +149,26 @@ li {
       text-align: center;
       padding: 8px 0px;
       min-width: 40px;
-      font-size: 12px; }
+      font-size: 13px; }
+  #receipt tr:first-child {
+    background-color:inherit; 
+    color: inherit; }
+    #receipt tr:first-child:hover {
+    background-color:inherit; 
+    color: inherit; }
+  #receipt tr:highlighted { 
+    background-color: darkslateblue; 
+    color: white; }
+  #receipt tr:hover { 
+    background-color: rebeccapurple; 
+    color: white; }
   #receipt td {
     padding: 6px 4px;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: bold;
     text-align: right;
     min-width: 40px;
+    border: 0px;
     white-space: nowrap; }
     #receipt td:first-child {
       width: 320px;
@@ -324,6 +338,7 @@ li {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  box-shadow: 0px 1px 4px #777777;
   -moz-box-shadow: 0px 1px 4px #777777;
   -webkit-box-shadow: 0px 1px 4px #777777;
   -box-shadow: 0px 1px 4px #777777; }
@@ -575,7 +590,7 @@ input {
 
 .menuItem {
     height: 54px;
-    width: auto;
+    width: 170px;
     margin: 4px;
     font-weight: bold;
     vertical-align: middle;

@@ -29,7 +29,7 @@ export default class Featured extends React.Component {
         const { checkDetails } = this.state;
 
         const CheckDetailComponents = checkDetails.map((menuItem) => {
-            return <CheckDetailItem key={menuItem.id} menuItemName={menuItem.text} price={menuItem.price} qty={menuItem.qty}/>;
+            return <CheckDetailItem key={menuItem.id} menuItemName={menuItem.text} price={menuItem.price} qty={menuItem.qty} selected={menuItem.selected}/>;
         });
 
         return (

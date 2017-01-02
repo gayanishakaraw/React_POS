@@ -16,8 +16,9 @@ class MenuItem extends Component {
             { miName: 'Pasta',          price: 850.00,  qty: 1   },
             { miName: 'Fish Bun',       price: 50.00,   qty: 1   },
             { miName: 'Coca-Cola',      price: 60.00,   qty: 1   },
-            { miName: 'Roti',           price: 40.00,   qty: 1   },
+            { miName: 'Rotty',          price: 40.00,   qty: 1   },
             { miName: 'Chicken Curry',  price: 180.00,  qty: 1   },
+            { miName: 'Ice Tea',        price: 480.00,  qty: 1   },
         ];
 
         return (
