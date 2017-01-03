@@ -160,8 +160,7 @@ li {
     background-color: darkslateblue; 
     color: white; }
   #receipt tr:hover { 
-    background-color: rebeccapurple; 
-    color: white; }
+    background-color: #e9eaf2;}
   #receipt td {
     padding: 6px 4px;
     font-size: 12px;
@@ -177,8 +176,11 @@ li {
       text-overflow: ellipsis; }
     #receipt td:last-child {
       border-right: none; }
+    #receipt td.hidden {
+      display: none;}
   #receipt tr.selected {
-    background-color: #e9eaf2; }
+    background-color: rebeccapurple; 
+    color: white; }
     #receipt tr.selected td {
       border-top: 2px solid #d5d6e0;
       border-bottom: 1px solid #d5d6e0;

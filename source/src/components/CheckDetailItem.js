@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 class CheckDetailItem extends Component {
     render() {
       const { menuItemId, menuItemName, qty, price, selected } = this.props;
-      
-        
+
         return (
-            <tr id={menuItemId} onClick={this.handleClick.bind(this,"selected")} >
+            <tr id={menuItemId} onClick={this.handleClick.bind(this)} >
                 <td>{menuItemName}</td>
                 <td>{price}</td>
                 <td></td>
@@ -15,16 +14,8 @@ class CheckDetailItem extends Component {
             </tr>
         );
     }
-    handleClick(className, obj) {
-        //ToDo
-        {/*if (obj.className.indexOf(className) >= 0) {
-            obj.className = obj
-                .className
-                .replace(className, "");
-        } else {
-            obj.className += className;
-        }*/}
-        alert(className);
+    handleClick() {
+        this.selected = (!this.selected)? true: false;
     }
 }
 
