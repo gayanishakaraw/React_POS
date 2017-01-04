@@ -33,14 +33,13 @@ class CheckDetailsStore extends EventEmitter {
         this.addMenuItem(action.id, action.text, action.price, action.qty, action.selected);
         break;
       }
-      case "VOID_MENUITEM": {
+      case "SELECT_MENUITEM": {
         this.menuItems = action.menuItems;
         this.emit("change");
         break;
       }
     }
   }
-
 }
 
 const checkDetailsStore = new CheckDetailsStore;
