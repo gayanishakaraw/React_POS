@@ -5,28 +5,7 @@ import dispatcher from "../dispatcher";
 class MenuItemStore extends EventEmitter {
   constructor() {
     super()
-    this.menuItems = [
-      {
-        id: 113464613,
-        text: "Chicken Burger",
-        price: "150.00"
-      },
-      {
-        id: 235684679,
-        text: "Omelet",
-        price: "50.00"
-      },
-      {
-        id: 235684679,
-        text: "Pizza",
-        price: "1050.00"
-      },
-      {
-        id: 235684679,
-        text: "Nachoas",
-        price: "2050.00"
-      },
-    ];
+    this.menuItems = [];
   }
 
   addMenuItem(text, price) {
