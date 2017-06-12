@@ -15,9 +15,9 @@ const matches = {
   ]
 };
 
-class RightPane extends Component{
+class RightPane extends Component {
 
- onChange(input, resolve) {
+  onChange(input, resolve) {
     // Simulate AJAX request
     setTimeout(() => {
       const suggestions = matches[Object.keys(matches).find((partial) => {
@@ -34,37 +34,27 @@ class RightPane extends Component{
     console.info(`Searching "${input}"`);
   }
 
-    render() {
-        return (
-            <div id='rightpane'>
-                <header>
-
-                    <ol class="breadcrum">
-                        <li>
-                            <a href="#"><img src="../static/img/home.png" class="homeimg" /></a>
-                        </li>
-                    </ol>
-                    <br/>
-                  </header>
-                  <body>
-                  {/*<div class="DivDesign">
-                    <SearchBar placeholder="Search Menu Items"  onChange={this.onChange}  onSearch={this.onSearch} />
-                 </div>*/}
-                 <br/>
-                 <br/>
-                </body>
-                
-                <div id="categories">
-                
-                    <h4>Categories: </h4>
-                    <ol></ol>
-                </div>
-                <div id="menuItems">
-                <MenuItem/>
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div id='rightpane'>
+        <header>
+          <ol class="breadcrum">
+            <li>
+              <a href="#"><img src="../static/img/home.png" class="homeimg" /></a>
+            </li>
+          </ol>
+          <br />
+        </header>
+        <div id="categories">
+          <h4>Categories: </h4>
+          <ol></ol>
+        </div>
+        <div id="menuItems">
+          <MenuItem />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default RightPane;

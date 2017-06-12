@@ -2,9 +2,12 @@ import {LOGIN_USER, LOGOUT_USER} from '../constants/LoginConstants';
 import BaseStore from './BaseStore';
 import jwt_decode from 'jwt-decode';
 
+import { EventEmitter } from "events";
+import dispatcher from "../dispatcher";
 
+/**
 class LoginStore extends BaseStore {
-
+ 
   constructor() {
     super();
     this.subscribe(() => this._registerToActions.bind(this))
@@ -13,7 +16,7 @@ class LoginStore extends BaseStore {
   }
 
   _registerToActions(action) {
-    switch(action.actionType) {
+    switch (action.actionType) {
       case LOGIN_USER:
         this._jwt = action.jwt;
         this._user = jwt_decode(this._jwt);
@@ -41,12 +44,9 @@ class LoginStore extends BaseStore {
   }
 }
 
-export default new LoginStore();
+export default LoginStore;
+*/
 
-
-/**import { EventEmitter } from "events";
-
-import dispatcher from "../dispatcher";
 
 class EmployeeSessionStore extends EventEmitter {
   constructor() {
@@ -83,4 +83,3 @@ const employeeSessionStore = new EmployeeSessionStore;
 dispatcher.register(employeeSessionStore.handleActions.bind(employeeSessionStore));
 
 export default employeeSessionStore;
-*/

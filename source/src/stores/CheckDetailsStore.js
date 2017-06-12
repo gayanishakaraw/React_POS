@@ -8,17 +8,41 @@ class CheckDetailsStore extends EventEmitter {
     this.menuItems = [];
   }
 
-  addMenuItem(text, price, qty) {
-    const id = Date.now();
-    var selected = false;
+//
+//  isExistingItem(id, items) {
+//    for (var i = 0; i < items.length; i++) {
+//     if (items[i].id === id) {
+//        items[i].qty++;
+//        return items[i].id > 0;
+//      }
+//    }
+//  }
 
-    this.menuItems.push({
-      id,
-      text,
-      price,
-      qty,
-      selected,
-    });
+
+  addMenuItem(num, text, price, qty, selected) {
+    const id = num;
+    var selected = selected;
+    var itemExists = false;
+
+    for (var i = 0; i < this.menuItems.length; i++) {
+      if (this.menuItems[i].id === id) {
+        itemExists = true;
+        this.menuItems[i].qty++;
+      }
+    }
+
+    if (itemExists) {
+      // item qty has been incremented 
+    }
+    else {
+      this.menuItems.push({
+        id,
+        text,
+        price,
+        qty,
+        selected,
+      });
+    }
 
     this.emit("change");
   }
@@ -28,7 +52,7 @@ class CheckDetailsStore extends EventEmitter {
   }
 
   handleActions(action) {
-    switch(action.type) {
+    switch (action.type) {
       case "ADD_MENUITEM": {
         this.addMenuItem(action.id, action.text, action.price, action.qty, action.selected);
         break;

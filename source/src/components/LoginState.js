@@ -9,7 +9,7 @@ class LoginState extends Component {
 
     render() {
         return (
-            <div id='loginState' align='right'>
+            <div id='loginState'>
      TEST USER
             </div>
         );

@@ -29,7 +29,7 @@ export default class Featured extends React.Component {
         const { checkDetails } = this.state;
 
         const CheckDetailComponents = checkDetails.map((menuItem) => {
-            return <CheckDetailItem key={menuItem.id} menuItemName={menuItem.text} price={menuItem.price} qty={menuItem.qty} selected={menuItem.selected}/>;
+            return <CheckDetailItem key={menuItem.id} id={menuItem.id} menuItemName={menuItem.text} price={menuItem.price} qty={menuItem.qty} selected={menuItem.selected}/>;
         });
 
         return (
@@ -44,7 +44,9 @@ export default class Featured extends React.Component {
                             <td>Total</td>
                         </tr>
                     </thead>
+                    <tbody>
                     {CheckDetailComponents}
+                    </tbody>
                 </table>
             </div>
         );
