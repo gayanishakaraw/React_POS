@@ -1,24 +1,5 @@
 import React, { Component } from 'react';
-/**import StyleSheet from 'react-style';
-'use strict';
-var StyleSheet = require('react-style');
 
-var HoverActionStyles = StyleSheet.create({
-    hStyle: {
-        background: '#9b59b6',
-        color: '#2c3e50',
-    }
-});
-
-var SelectActionStyles = StyleSheet.create({
-    nStyle: {
-        background: '#ecf0f1',
-        color: '#1abc9c',
-    }
-});
-*/
-
-//var SelectActionStyles = {{ backgroundColor: 'black' }};
 const SelectActionStyles = {
     color: 'blue',
     backgroundColor: 'black'
@@ -28,8 +9,6 @@ const DefaultStyles = {
     color: 'black',
     backgroundColor: 'white'
 };
-
-//var ItemStyle = { DefaultStyles };
 
 class CheckDetailItem extends Component {
     constructor(props) {
@@ -52,10 +31,8 @@ class CheckDetailItem extends Component {
 
             this.setState(this.itemStyle = { SelectActionStyles });
             this.isItemSelected = true;
-            //this.itemStyle = "nStyle";
         }
         else {
-            //this.setState({ itemStyle: "{background:rebeccapurple;color:white}" });
             var tr = document.getElementById(this.props.id);
             tr.style.backgroundColor = "white";
 
@@ -64,10 +41,7 @@ class CheckDetailItem extends Component {
         };
     }
 
-    render() {
-
-        // var hStyle = "{backgroundColor:'rebeccapurple';color:'white'}";
-        // var nStyle = "{backgroundColo:blue;color:red}";       
+    render() {    
         return (
             <tr id={this.props.id} style={this.itemStyle} onClick={this.handleClick.bind(this)} >
                 <td>{this.props.menuItemName}</td>

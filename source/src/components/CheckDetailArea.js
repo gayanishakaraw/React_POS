@@ -50,7 +50,6 @@ export default class Featured extends React.Component {
                 </table>
             </div>
         );
-
     }
 }
 

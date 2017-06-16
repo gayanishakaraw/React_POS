@@ -16,9 +16,6 @@ export function deleteMenuItem(id) {
 }
 
 export function reloadMenuItems() {
-  // axios("http://someurl.com/somedataendpoint").then((data) => {
-  //   console.log("got the data!", data);
-  // })
   dispatcher.dispatch({type: "FETCH_MENUITEMS"});
   setTimeout(() => {
     dispatcher.dispatch({type: "RECEIVE_MENUITEM", menuItems: [

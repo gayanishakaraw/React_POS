@@ -6,18 +6,8 @@ class CheckDetailsStore extends EventEmitter {
   constructor() {
     super()
     this.menuItems = [];
+    this.subtotal = 0;
   }
-
-//
-//  isExistingItem(id, items) {
-//    for (var i = 0; i < items.length; i++) {
-//     if (items[i].id === id) {
-//        items[i].qty++;
-//        return items[i].id > 0;
-//      }
-//    }
-//  }
-
 
   addMenuItem(num, text, price, qty, selected) {
     const id = num;
@@ -49,6 +39,15 @@ class CheckDetailsStore extends EventEmitter {
 
   getAll() {
     return this.menuItems;
+  }
+
+  getSubTotal() {
+    var total = 0;
+        for (var i = 0; i < this.menuItems.length; i++) {
+            total = total + (this.menuItems[i].price * this.menuItems[i].qty) ;
+        }
+        this.subtotal = total;
+        return total;
   }
 
   handleActions(action) {

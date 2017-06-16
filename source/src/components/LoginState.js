@@ -10,7 +10,7 @@ class LoginState extends Component {
     render() {
         return (
             <div id='loginState'>
-     TEST USER
+     TEST USER ID :
             </div>
         );
     }
